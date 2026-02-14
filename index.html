@@ -1,120 +1,138 @@
 <!DOCTYPE html>
-<html lang="fa" itemscope itemtype="https://schema.org/Organization">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تامین یار | خدمات حرفه‌ای تامین و پشتیبانی در تهران و اسلامشهر | 37211694</title>
-
-    <!-- Meta اینماد -->
-    <meta name="enamad" content="37211694" />
-
-    <!-- Meta SEO -->
-    <meta name="description" content="وب‌سایت رسمی تامین یار – ارائه خدمات حرفه‌ای و پشتیبانی کامل در تهران و اسلامشهر. ایمیل: info@yartamin.ir">
-    <meta name="keywords" content="تامین یار, خدمات, تهران, اسلامشهر, پشتیبانی, info@yartamin.ir">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="تامین یار">
-    <meta property="og:description" content="وب‌سایت رسمی تامین یار – ارائه خدمات حرفه‌ای و پشتیبانی کامل.">
-    <meta property="og:image" content="img/og-image.jpg">
-    <meta property="og:url" content="https://yartamin.ir">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="تامین یار">
-    <meta name="twitter:description" content="وب‌سایت رسمی تامین یار – ارائه خدمات حرفه‌ای و پشتیبانی کامل.">
-    <meta name="twitter:image" content="img/og-image.jpg">
-
-    <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
+    <title>تامین یار - Yartamin</title>
+    <meta name="description" content="وب سایت تامین یار، ارائه خدمات و محصولات با کیفیت، آدرس تهران، اسلامشهر">
+    <meta name="keywords" content="تامین یار, محصولات, خدمات, تهران, اسلامشهر">
+    <meta name="author" content="Yartamin">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- استایل پایه -->
     <style>
-        * { margin:0; padding:0; box-sizing:border-box; font-family: 'Vazirmatn', sans-serif; }
-        body { line-height:1.6; background:#f5f5f5; color:#333; }
-        a { color: inherit; text-decoration:none; }
-        header { background:#0a74da; color:#fff; padding:20px 0; text-align:center; }
-        header h1 { font-size:2rem; }
-        nav { text-align:center; margin:15px 0; }
-        nav a { color:#fff; margin:0 10px; font-weight:700; }
-        .container { max-width:1100px; margin:20px auto; padding:0 15px; }
-        .services { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px; margin-bottom:30px; }
-        .service-card { background:#fff; padding:20px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1); transition:transform .3s; }
-        .service-card:hover { transform: translateY(-5px); }
-        .service-card h3 { margin-bottom:10px; color:#0a74da; }
-        footer { background:#222; color:#fff; text-align:center; padding:30px 15px; margin-top:50px; }
-        footer a { color:#fff; margin:0 5px; }
-        .contact-info { margin-bottom:15px; }
-        .social img { margin:0 5px; vertical-align:middle; }
-        @media (max-width:600px){ .services{grid-template-columns:1fr;} }
+        body {
+            font-family: Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f5f5;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #27ae60, #2980b9);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .contact-info {
+            margin: 15px 20px;
+            font-size: 14px;
+        }
+        .social-icons img {
+            width: 32px;
+            height: 32px;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        main {
+            padding: 20px;
+        }
+        .pagination {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .pagination a {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 6px 12px;
+            background-color: #27ae60;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .pagination a:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            background-color: #2980b9;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
     </style>
 </head>
-<body itemprop="mainEntityOfPage">
+<body>
+    <header>
+        <h1>تامین یار</h1>
+        <nav>
+            <a href="#home">خانه</a>
+            <a href="#products">محصولات</a>
+            <a href="#services">خدمات</a>
+            <a href="#contact">تماس با ما</a>
+        </nav>
+    </header>
 
-<header>
-    <h1 itemprop="name">تامین یار</h1>
-    <p itemprop="description">خدمات حرفه‌ای تامین و پشتیبانی در تهران و اسلامشهر</p>
-    <nav>
-        <a href="#services">خدمات</a>
-        <a href="#contact">تماس با ما</a>
-    </nav>
-</header>
-
-<main class="container">
-
-    <!-- خدمات -->
-    <section id="services">
-        <h2>خدمات ما</h2>
-        <div class="services">
-            <div class="service-card" itemscope itemtype="https://schema.org/Service">
-                <h3 itemprop="name">خدمات تامین تجهیزات</h3>
-                <p itemprop="description">تامین تجهیزات با کیفیت و سریع در تهران و اسلامشهر.</p>
-            </div>
-            <div class="service-card" itemscope itemtype="https://schema.org/Service">
-                <h3 itemprop="name">پشتیبانی فنی</h3>
-                <p itemprop="description">پشتیبانی ۲۴ ساعته و رفع مشکلات فنی با تیم متخصص.</p>
-            </div>
-            <div class="service-card" itemscope itemtype="https://schema.org/Service">
-                <h3 itemprop="name">مشاوره و آموزش</h3>
-                <p itemprop="description">ارائه مشاوره تخصصی و آموزش‌های کاربردی برای تیم‌ها و شرکت‌ها.</p>
-            </div>
+    <div class="contact-info">
+        آدرس: تهران، اسلامشهر | ایمیل: <a href="mailto:info@yartamin.ir">info@yartamin.ir</a>
+        <div class="social-icons">
+            <a href="https://wa.me/your-number" target="_blank"><img src="icons/whatsapp.png" alt="واتساپ"></a>
+            <a href="https://t.me/your-telegram" target="_blank"><img src="icons/telegram.png" alt="تلگرام"></a>
+            <a href="https://eitaa.com/your-eitaa" target="_blank"><img src="icons/eitaa.png" alt="ایتا"></a>
         </div>
-    </section>
-<!-- تماس -->
-    <section id="contact">
-        <h2>تماس با ما</h2>
-        <div class="contact-info">
-            <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                آدرس: <span itemprop="streetAddress">تهران، اسلامشهر</span>
-            </p>
-            <p>ایمیل: <a href="mailto:info@yartamin.ir" itemprop="email">info@yartamin.ir</a></p>
-            <p>تلفن: <span itemprop="telephone">۰۲۱-xxxxxxx</span></p>
-        </div>
-        <div class="social">
-            <a href="https://wa.me/your_number" target="_blank"><img src="img/whatsapp.png" alt="واتساپ" width="40" loading="lazy"></a>
-            <a href="https://t.me/your_channel" target="_blank"><img src="img/telegram.png" alt="تلگرام" width="40" loading="lazy"></a>
-            <a href="https://eitaa.com/your_channel" target="_blank"><img src="img/eitaa.png" alt="ایتا" width="40" loading="lazy"></a>
-        </div>
-    </section>
-</main>
+    </div>
 
-<footer>
-    <p>© 2026 تامین یار | همه حقوق محفوظ است</p>
-</footer>
+    <main>
+        <section id="home">
+            <h2>خوش آمدید به تامین یار</h2>
+            <p>ما ارائه‌دهنده خدمات و محصولات با کیفیت هستیم.</p>
+        </section>
 
-<!-- Lazy load تصاویر و بهینه سازی JS -->
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const lazyImages = document.querySelectorAll("img[loading='lazy']");
-        lazyImages.forEach(img => {
-            img.src = img.dataset.src || img.src;
-        });
-    });
-</script>
+        <section id="products">
+            <h2>محصولات</h2>
+            <ul>
+                <li>محصول ۱</li>
+                <li>محصول ۲</li>
+                <li>محصول ۳</li>
+            </ul>
+            <div class="pagination">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+            </div>
+        </section>
 
+        <section id="services">
+            <h2>خدمات</h2>
+            <ul>
+                <li>خدمت ۱</li>
+                <li>خدمت ۲</li>
+                <li>خدمت ۳</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>تماس با ما</h2>
+            <p>برای ارتباط با ما از ایمیل <a href="mailto:info@yartamin.ir">info@yartamin.ir</a> استفاده کنید.</p>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Yartamin | تمام حقوق محفوظ است
+    </footer>
 </body>
 </html>
