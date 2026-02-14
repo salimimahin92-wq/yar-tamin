@@ -1,138 +1,235 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تامین یار - Yartamin</title>
-    <meta name="description" content="وب سایت تامین یار، ارائه خدمات و محصولات با کیفیت، آدرس تهران، اسلامشهر">
-    <meta name="keywords" content="تامین یار, محصولات, خدمات, تهران, اسلامشهر">
-    <meta name="author" content="Yartamin">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- استایل پایه -->
-    <style>
-        body {
-            font-family: Tahoma, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f5f5;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(90deg, #27ae60, #2980b9);
-            color: white;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-        nav a {
-            color: white;
-            margin-left: 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .contact-info {
-            margin: 15px 20px;
-            font-size: 14px;
-        }
-        .social-icons img {
-            width: 32px;
-            height: 32px;
-            margin-left: 10px;
-            vertical-align: middle;
-        }
-        main {
-            padding: 20px;
-        }
-        .pagination {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .pagination a {
-            display: inline-block;
-            margin: 0 5px;
-            padding: 6px 12px;
-            background-color: #27ae60;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-        }
-        .pagination a:hover {
-            background-color: #2980b9;
-        }
-        footer {
-            background-color: #2980b9;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 30px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>یار تامین | خدمات فنی و بازرگانی حرفه‌ای</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="یار تامین ارائه دهنده خدمات حرفه‌ای فنی و بازرگانی. نصب شبکه، تعمیر پمپ و الکتروموتور، صدور کارت بازرگانی و امور تجارت.">
+<meta name="keywords" content="یار تامین, خدمات فنی, بازرگانی, نصب شبکه, تعمیر پمپ, الکتروموتور, کارت بازرگانی, تجارت">
+
+<style>
+body{
+margin:0;
+font-family:tahoma;
+background:#f4f8fb;
+color:#222;
+}
+
+/* ===== HEADER ===== */
+header{
+background:#fff;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 3px 12px rgba(0,0,0,.1);
+position:sticky;
+top:0;
+}
+
+.green{color:#00b894;font-weight:bold}
+.blue{color:#0b57d0;font-weight:bold}
+
+/* ===== HERO ===== */
+.hero{
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(135deg,#0b57d0,#00b894);
+color:#fff;
+}
+
+.hero h1{margin-bottom:10px}
+
+.btn{
+background:#fff;
+color:#0b57d0;
+padding:10px 20px;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* ===== SECTION ===== */
+.section{
+max-width:1100px;
+margin:auto;
+padding:70px 20px;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+/* ===== GRID ===== */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:linear-gradient(135deg,#0b57d0,#00b894);
+color:#fff;
+padding:25px;
+border-radius:14px;
+box-shadow:0 6px 15px rgba(0,0,0,.1);
+}
+
+/* ===== CONTACT ===== */
+.contact{
+background:linear-gradient(135deg,#0b57d0,#00b894);
+color:#fff;
+padding:35px;
+border-radius:18px;
+text-align:center;
+}
+
+/* ===== RESUME FORM ===== */
+.formbox{
+max-width:600px;
+margin:auto;
+background:#fff;
+padding:25px;
+border-radius:14px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin-bottom:10px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+/* ===== FLOAT BUTTONS ===== */
+.float{
+position:fixed;
+left:20px;
+bottom:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.float a{
+width:50px;
+height:50px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+text-decoration:none;
+font-size:20px;
+}
+
+.whatsapp{background:#25D366}
+.telegram{background:#0088cc}
+.eitaa{background:#00b894}
+
+footer{
+text-align:center;
+padding:15px;
+opacity:.6;
+}
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>تامین یار</h1>
-        <nav>
-            <a href="#home">خانه</a>
-            <a href="#products">محصولات</a>
-            <a href="#services">خدمات</a>
-            <a href="#contact">تماس با ما</a>
-        </nav>
-    </header>
 
-    <div class="contact-info">
-        آدرس: تهران، اسلامشهر | ایمیل: <a href="mailto:info@yartamin.ir">info@yartamin.ir</a>
-        <div class="social-icons">
-            <a href="https://wa.me/your-number" target="_blank"><img src="icons/whatsapp.png" alt="واتساپ"></a>
-            <a href="https://t.me/your-telegram" target="_blank"><img src="icons/telegram.png" alt="تلگرام"></a>
-            <a href="https://eitaa.com/your-eitaa" target="_blank"><img src="icons/eitaa.png" alt="ایتا"></a>
-        </div>
-    </div>
+<header>
+<div>
+<span class="green">یار</span>
+<span class="blue">تأمین</span>
+</div>
+</header>
 
-    <main>
-        <section id="home">
-            <h2>خوش آمدید به تامین یار</h2>
-            <p>ما ارائه‌دهنده خدمات و محصولات با کیفیت هستیم.</p>
-        </section>
+<!-- HERO -->
+<div class="hero">
+<h1>راهکارهای حرفه‌ای فنی و بازرگانی</h1>
+<p>صفر تا صد امور فنی و بازرگانی خود را با خیال راحت به ما بسپارید</p>
+<br>
+<a href="tel:09028618418"><button class="btn">تماس مستقیم</button></a>
+</div>
 
-        <section id="products">
-            <h2>محصولات</h2>
-            <ul>
-                <li>محصول ۱</li>
-                <li>محصول ۲</li>
-                <li>محصول ۳</li>
-            </ul>
-            <div class="pagination">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-            </div>
-        </section>
+<!-- SERVICES -->
+<div class="section">
+<h2>خدمات ما</h2>
+<div class="grid">
+<div class="card">نصب و امور شبکه و اینترنت</div>
+<div class="card">ساخت و اجرای قطعات فنی</div>
+<div class="card">تعمیر پمپ و الکتروموتور</div>
+<div class="card">پیگیری خرید و سفارش‌ها</div>
+<div class="card">امور سامانه جامع تجارت</div>
+<div class="card">صدور و تمدید کارت بازرگانی</div>
+</div>
+</div>
 
-        <section id="services">
-            <h2>خدمات</h2>
-            <ul>
-                <li>خدمت ۱</li>
-                <li>خدمت ۲</li>
-                <li>خدمت ۳</li>
-            </ul>
-        </section>
+<!-- ABOUT -->
+<div class="section">
+<h2>درباره ما</h2>
+<p style="text-align:center;max-width:700px;margin:auto">
+ما یک تیم حرفه‌ای و توانمند هستیم که صفر تا صد پروژه‌های شما را با کیفیت بالا انجام می‌دهیم.
+با خیال راحت می‌توانید کار را به ما بسپارید؛ مسئولیت‌پذیری و دقت، تعهد ماست.
+<br>
+📍 تهران، اسلامشهر
+<br>
+📧 info@yartamin.ir
+</p>
+</div>
 
-        <section id="contact">
-            <h2>تماس با ما</h2>
-            <p>برای ارتباط با ما از ایمیل <a href="mailto:info@yartamin.ir">info@yartamin.ir</a> استفاده کنید.</p>
-        </section>
-    </main>
+<!-- RESUME / HIRING -->
+<div class="section">
+<h2>استخدام / ارسال رزومه</h2>
 
-    <footer>
-        © 2026 Yartamin | تمام حقوق محفوظ است
-    </footer>
+<div class="formbox">
+<input id="name" placeholder="نام و نام خانوادگی">
+<input id="phone" placeholder="شماره تماس">
+<textarea id="desc" placeholder="مهارت‌ها یا توضیحات"></textarea>
+
+<button onclick="sendResume()" class="btn" style="width:100%">
+ارسال رزومه از طریق واتساپ
+</button>
+</div>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+<div class="contact">
+<h2>تماس با ما</h2>
+<p>📞 09028618418</p>
+<p>📧 info@yartamin.ir</p>
+<p>📍 تهران، اسلامشهر</p>
+</div>
+</div>
+
+<footer>
+© 2026 Yar Tamin
+</footer>
+<!-- FLOAT BUTTONS -->
+<div class="float">
+<a class="whatsapp" href="https://wa.me/989028618418"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="24"></a>
+<a class="telegram" href="https://t.me/+989028618418"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="24"></a>
+<a class="eitaa" href="https://eitaa.com/09028618418"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Eitaa_logo.png" width="24"></a>
+</div>
+
+<script>
+function sendResume(){
+const name=document.getElementById("name").value;
+const phone=document.getElementById("phone").value;
+const desc=document.getElementById("desc").value;
+
+const text=رزومه جدید:
+نام: ${name}
+شماره: ${phone}
+توضیحات: ${desc};
+
+window.open("https://wa.me/989028618418?text="+encodeURIComponent(text));
+}
+</script>
+
 </body>
 </html>
